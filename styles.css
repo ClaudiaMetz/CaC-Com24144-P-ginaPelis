@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  border: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 60px;
+}
+
+/*  INDEX HEADER  */
+
+header {
+  background-color: #c71585;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo_CaC-Movies {
+  padding: 0.3em 2em;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo_CaC-Movies img {
+  width: 15%;
+  color: azure;
+}
+
+#txt_logo {
+  color: azure;
+  font-size: large;
+  text-decoration: none;
+  margin: 0.7em;
+}
+
+/*  animación del isologo*/
+.logo_CaC-Movies:hover {
+  animation: wiggle 3s linear infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+/* li del header */
+.liNavHeader {
+  list-style-type: none;
+  display: inline;
+}
+
+/* a del header */
+.navHeader {
+  color: azure;
+  font-size: large;
+  text-decoration: none;
+  margin: 0.7em;
+}
+
+.navHeader:hover {
+  color: #ffdab9;
+  font-size: x-large;
+}
+
+/*  Botón Iniciar Sesión  */
+#navHeaderIS {
+  background-color: #8b008b;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+#navigYlogo nav {
+  padding: 1em 3em;
+  text-align: right;
+  width: 65%;
+}
+
+#navigYlogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  INDEX MAIN  */
+
+p {
+  font-size: 20px;
+  color: #bb1e1e;
+}
+
+/*  1ra SECCIÓN - PANTALLA INICIAL  */
+
+.inicial {
+  background-image: url(img/familyfuntime-movienight.jpg);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Color de fondo blanco con opacidad */
+  background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen de fondo */
+}
+
+.bajadaInicial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.H1Inicial {
+  color: #a43b7e;
+  font-size: 60px;
+  text-align: center;
+}
+
+.H3Inicial {
+  color: #ffdab9;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bajadaInicial a {
+  color: azure;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 0.7em;
+  background-color: orchid;
+  padding: 1.2%;
+  border-radius: 10px;
+  display: block;
+}
+
+/*  2da SECCIÓN - PANTALLA BUSCAR  */
+
+.buscador {
+  background-color: mediumpurple;
+  height: 400px;
+}
+
+.buscaPeli {
+  background-color: mediumslateblue;
+  width: 50%;
+  margin: 2em auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buscador h3 {
+  color: azure;
+  font-size: 40px;
+  text-align: center;
+  padding: 1em;
+}
+
+.inputBuscar {
+  display: block;
+  width: 75%;
+  border: 2px solid #c71585;
+  border-radius: 20px;
+  margin: 4%;
+  height: 3rem;
+}
+
+.botonBuscar {
+  width: 20%;
+  color: azure;
+  font-size: x-large;
+  background-color: #c71585;
+  border-radius: 20px;
+  margin: 4%;
+  height: 3rem;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: #c71585;
+}
+
+/*  animación del form buscar  */
+
+/*  3ra SECCIÓN - PANTALLA TENDENCIAS  */
+
+.tendencias {
+  background-color: mediumpurple;
+  padding: 2em;
+}
+
+.botonTendencia {
+  color: azure;
+  font-size: x-large;
+  background-color: #c71585;
+  border-radius: 10px;
+  margin: 4%;
+  height: 3rem;
+}
+
+/*  4ta SECCIÓN - PANTALLA ACLAMADAS  */
+
+.aclamadas {
+  background-color: mediumpurple;
+  padding: 4em;
+}
+
+/* INDEX FOOTER */
+
+footer {
+  background-color: #c71585;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navYicon nav {
+  padding: 1em;
+  text-align: center;
+  width: 90%;
+}
+
+.navYicon {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* img del footer */
+.navYicon div {
+  color: #8b008b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.volverHome {
+  padding: 1em;
+  text-align: right;
+  width: 10%;
+}
+
+/* li del footer */
+.liNavFooter {
+  list-style-type: none;
+  display: inline;
+}
+
+/* a del footer */
+.navFooter {
+  color: azure;
+  font-size: large;
+  text-decoration: none;
+  margin: 0.7em;
+}
+
+.navFooter:hover {
+  color: #ffdab9;
+  font-size: x-large;
+}
+
+/* Administrador de Películas */
+
+#navFooterAP {
+  background-color: #8b008b;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+/*  REGISTRO  */
+
+/*  BODY REGISTRO  */
+
+.bodyRegistro {
+  background-image: url(img/fondo_pagina_registro.jpg);
+  background-size: cover;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Color de fondo blanco con opacidad */
+  background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen de fondo */
+}
+
+/*  MAIN REGISTRO  */
+
+.logo_CaC-MoviesRegistro {
+  padding: 0.3em 2em;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo_CaC-MoviesRegistro img {
+  width: 5%;
+  color: azure;
+}
+
+.mainRegistro {
+  margin-top: 60px;
+}
+
+/* FORM DE REGISTRO */
+
+.registro {
+  background-color: #dda0dd;
+  width: 30%;
+  margin: 8em auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.registro h2 {
+  color: azure;
+}
+
+.registro input {
+  display: block;
+  width: 85%;
+  border: 2px solid #c71585;
+  border-radius: 10px;
+  margin: 3%;
+  height: 3rem;
+}
+
+.inputRegistro:focus {
+  background-color: #cbcac9;
+}
+
+/*  animación del form registro  */
+
+.secRegistro {
+  opacity: 0;
+  animation: Aparece 4s ease forwards;
+}
+
+@keyframes Aparece {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.TyC {
+  font-size: small;
+  color: #c71585;
+}
+
+.txtAyuda {
+  font-size: small;
+  color: #c71585;
+}
+
+.leerTyC {
+  font-size: small;
+  color: #c77eac;
+}
+
+.ir_a_TyC {
+  text-decoration: none;
+}
+
+/*  FOOTER REGISTRO  */
+
+.footerRegistro {
+  text-align: right;
+  padding: 2% 0;
+}
+
+.boton {
+  background-color: #c71585;
+  font-size: large;
+  color: azure;
+}
+
+.volverAlRegistro {
+  color: azure;
+  font-size: large;
+  text-decoration: none;
+  margin: 0.7em;
+  padding: 1em;
+}
+
+/* background-color: #9f3647;
+es el bordó de fondo del modelo */

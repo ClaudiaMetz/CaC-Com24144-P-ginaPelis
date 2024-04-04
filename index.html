@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/ICO-Clapperboard-Film.ico"
+    />
+    <title>CaC-Pelis</title>
+  </head>
+  <body>
+    <header>
+      <div id="navigYlogo">
+        <div class="logo_CaC-Movies">
+          <img src="img/cinta_cine.png" width="30%" alt="cinta_de_cine" />
+          <h2 id="txt_logo">CAC-Movies</h2>
+        </div>
+        <nav>
+          <ul>
+            <li class="liNavHeader">
+              <a class="navHeader" href="#">Tendencias</a>
+            </li>
+            <li class="liNavHeader">
+              <a class="navHeader" href="registro.html">Registrarse</a>
+            </li>
+            <li class="liNavHeader">
+              <a id="navHeaderIS" class="navHeader" href="iniciarSesión.html"
+                >Iniciar Sesión</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="inicial">
+        <h1 class="H1Inicial">
+          Películas y series ilimitadas <br />
+          en un solo lugar
+        </h1>
+        <div class="bajadaInicial">
+          <h3 class="H3Inicial">
+            Disfruta donde quieras. <br />
+            Cancela en cualquier momento.
+          </h3>
+          <a href="registro.html">Registrate</a>
+        </div>
+      </section>
+      <section class="buscador">
+        <h3>¿Qué estas buscando para ver?</h3>
+        <form class="buscaPeli" method="get">
+          <input
+            class="inputBuscar"
+            type="text"
+            id="buscar"
+            name="buscar"
+            placeholder="Buscar..."
+            maxlength="25"
+            minlength="4"
+          />
+          <input class="botonBuscar" type="submit" value="Buscar" />
+        </form>
+        <br />
+        <hr />
+        <br />
+      </section>
+      <section class="tendencias">
+        <p>falta agregar las cards a este sector</p>
+        <div class="tendenciasBotones">
+          <input class="botonTendencia" type="submit" value="Anterior" />
+          <input class="botonTendencia" type="submit" value="Siguiente" />
+        </div>
+      </section>
+      <section class="aclamadas">
+        <p>aquí va el carrusel de cards y listo</p>
+      </section>
+    </main>
+    <footer>
+      <div class="navYicon">
+        <nav>
+          <ul>
+            <li class="liNavFooter">
+              <a class="navFooter" href="#">Términos y condiciones</a>
+            </li>
+            <li class="liNavFooter">
+              <a class="navFooter" href="#">Preguntas frecuentes</a>
+            </li>
+            <li class="liNavFooter"><a class="navFooter" href="#">Ayuda</a></li>
+            <li class="liNavFooter">
+              <a id="navFooterAP" class="navFooter" href="#"
+                >Administrador de Películas</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a class="volverHome" href="index.html"
+          ><img
+            src="img/arrow-circle-up_1.png"
+            width="30%"
+            alt="flecha_ir_a_home"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

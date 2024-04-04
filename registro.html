@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/ICO-Clapperboard-Film.ico"
+    />
+    <title>Registro</title>
+  </head>
+  <body class="bodyRegistro">
+    <header>
+      <div class="logo_CaC-MoviesRegistro">
+        <img src="img/cinta_cine.png" width="30%" alt="cinta_de_cine" />
+        <h2 id="txt_logo">CAC-Movies</h2>
+      </div>
+    </header>
+    <main class="mainRegistro">
+      <section class="secRegistro">
+        <form class="registro" method="post">
+          <h2>Registro</h2>
+          <input
+            class="inputRegistro"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            placeholder="nombre"
+            maxlength="25"
+            minlength="4"
+          />
+          <input
+            class="inputRegistro"
+            type="text"
+            id="apellido"
+            name="apellido"
+            required
+            placeholder="apellido"
+            maxlength="25"
+            minlength="4"
+          />
+          <input
+            class="inputRegistro"
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="e-mail"
+            maxlength="35"
+            minlength="12"
+          />
+          <input
+            class="inputRegistro"
+            type="password"
+            id="contraseña"
+            name="contraseña"
+            required
+            placeholder="contraseña"
+            maxlength="25"
+            minlength="8"
+          />
+          <input
+            class="inputRegistro"
+            type="date"
+            id="fechaNac"
+            name="fechaNac"
+            required
+            placeholder="fecha de nac."
+          />
+          <input
+            type="text"
+            id="paisResid"
+            name="paisResid"
+            placeholder="seleccione país de residencia"
+            list="nombrePais"
+          />
+          <datalist id="nombrePais">
+            <option value="Argentina"></option>
+            <option value="Bolivia"></option>
+            <option value="Brasil"></option>
+            <option value="Chile"></option>
+            <option value="Colombia"></option>
+            <option value="Ecuador"></option>
+            <option value="Paraguay"></option>
+            <option value="Perú"></option>
+            <option value="Uruguay"></option>
+            <option value="Venezuela"></option>
+          </datalist>
+          <div class="TyC">
+            <label class="txtCheck" for="terminos"
+              ><input
+                class="check"
+                type="checkbox"
+                id="terminos"
+                required
+                width="20px"
+                height="20px"
+              />
+              Acepto Términos <br />
+              y Condiciones</label
+            >
+          </div>
+          <a class="ir_a_TyC" href="#"
+            ><label class="leerTyC">Leer Términos y Condiciones</label></a
+          >
+          <input class="boton" type="submit" value="Registrarse" />
+          <a class="txtAyuda" href="#">¿Necesitás ayuda?</a>
+        </form>
+      </section>
+    </main>
+    <footer class="footerRegistro">
+      <a class="volverAlRegistro" href="index.html">Volver al inicio</a>
+    </footer>
+  </body>
+</html>
