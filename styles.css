@@ -43,7 +43,7 @@ header {
   margin: 0.7em;
 }
 
-/*  animación del isologo*/
+/*  animación del isologo  */
 .logo_CaC-Movies:hover {
   animation: wiggle 3s linear infinite;
 }
@@ -135,7 +135,7 @@ p {
     255,
     0.3
   ); /* Color de fondo blanco con opacidad */
-  background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen de fondo */
+  background-blend-mode: overlay; /* Mezcla el color y la imagen de fondo */
 }
 
 .bajadaInicial {
@@ -383,7 +383,7 @@ footer {
     255,
     0.3
   ); /* Color de fondo blanco con opacidad */
-  background-blend-mode: overlay; /* Mezcla el color con la imagen de fondo */
+  background-blend-mode: overlay; /* Mezcla el color y la imagen de fondo */
 }
 
 /*  MAIN REGISTRO  */
