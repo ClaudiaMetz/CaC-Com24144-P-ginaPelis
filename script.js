@@ -15,15 +15,21 @@ let cards = [
   { img: "img/el_Diario_de_Noa.jpg", text: "El diario de Noa" },
   { img: "img/la_Ultima_Cancion.jpeg", text: "La última canción" },
   { img: "img/nunca_es_tarde.jpg", text: "Nunca es tarde para enamorarse" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-  { img: "img/", text: "Texto de la tarjeta 1" },
-]; // Esta es la lista de todas las tarjetas
+  { img: "img/Boogeyman.jpg", text: "Boogeyman" },
+  { img: "img/No_tengas_miedo.jpeg", text: "No tengas miedo a la oscuridad" },
+  { img: "img/Secuestro.jpg", text: "Secuestro" },
+  { img: "img/Toc_Toc_Toc.jpg", text: "Toc Toc Toc" },
+  {
+    img: "img/Miss_peregrines.jpg",
+    text: "Miss Peregrine's home for peculiar children",
+  },
+  { img: "img/Beetlejuice.jpg", text: "Beetlejuice 1" },
+  {
+    img: "img/Charlie_y_la_fabrica.jpg",
+    text: "Charlie y la fábrica de chocolate",
+  },
+  { img: "img/Coraline.jpg", text: "Coraline" },
+]; // Esta es la lista de todas las cards
 
 let currentStart = 0;
 
