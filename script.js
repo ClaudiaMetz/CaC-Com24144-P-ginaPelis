@@ -33,6 +33,8 @@ let cards = [
 
 let currentStart = 0;
 
+//función para mostrar las cards en sección TENDENCIAS
+
 function displayCards(start) {
   let end = start + 12;
   if (end > cards.length) end = cards.length;
@@ -74,4 +76,37 @@ document.getElementById("atras").addEventListener("click", function () {
   }
 });
 
-displayCards(currentStart); // Muestra las primeras 12 tarjetas al cargar la página
+displayCards(currentStart);
+// Muestra las primeras 12 cards al cargar la página
+
+//------------------------------------------
+
+//función para mostrar las cards en sección ACLAMADAS
+
+function displayFourCards() {
+  var container = document.getElementById("cardAclam-container");
+
+  container.innerHTML = "";
+
+  for (var i = 0; i < cards.length; i++) {
+    var movieDiv = document.createElement("div");
+    movieDiv.className = "movie";
+
+    var img = document.createElement("img");
+    img.src = cards[i].img;
+    img.alt = cards[i].name;
+
+    var p = document.createElement("p");
+    p.textContent = cards[i].name;
+
+    movieDiv.appendChild(img);
+    movieDiv.appendChild(p);
+
+    container.appendChild(movieDiv);
+  }
+}
+
+window.onload = function () {
+  displayFourCards();
+};
+// Muestra las primeras 4 cards al cargar la página y se ve el resto corriendo la barra

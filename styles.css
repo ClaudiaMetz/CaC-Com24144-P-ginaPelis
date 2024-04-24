@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: bold !important;
   font-style: normal;
   margin-top: 60px;
 }
@@ -20,6 +20,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1900;
 }
 
 .logo_CaC-Movies {
@@ -123,12 +124,11 @@ p {
 .inicial {
   background-image: url(img/familyfuntime-movienight.jpg);
   background-size: cover;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   background-color: rgba(
     255,
     255,
@@ -185,7 +185,8 @@ p {
 }
 
 .buscador h3,
-.tendencias h3 {
+.tendencias h3,
+.aclamadas h3 {
   color: azure;
   font-size: 40px;
   text-align: center;
@@ -230,12 +231,14 @@ hr {
   flex-wrap: wrap;
   justify-content: space-around;
   scroll-margin-top: 0.7em;
+  position: relative;
+  z-index: 900;
 }
 
 .card {
-  width: 250px;
-  height: 350px;
-  margin: 10px;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -307,7 +310,26 @@ hr {
 
 .aclamadas {
   background-color: mediumpurple;
-  padding: 4em;
+  padding: 5em;
+}
+
+#cardAclam-container {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.movie {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 270px;
+  margin: 25px;
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 /* INDEX FOOTER */
@@ -317,6 +339,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 1900;
 }
 
 .navYicon nav {
