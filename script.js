@@ -29,7 +29,7 @@ let cards = [
     text: "Charlie y la fábrica de chocolate",
   },
   { img: "img/Coraline.jpg", text: "Coraline" },
-]; // Esta es la lista de todas las cards
+]; // Esta es la lista para todas las cards cargadas hasta ahora
 
 let currentStart = 0;
 
@@ -94,13 +94,13 @@ function displayFourCards() {
 
     var img = document.createElement("img");
     img.src = cards[i].img;
-    img.alt = cards[i].name;
+    img.alt = cards[i].text;
 
-    var p = document.createElement("p");
-    p.textContent = cards[i].name;
+    /*var p = document.createElement("p");
+    p.textContent = cards[i].text;*/
 
     movieDiv.appendChild(img);
-    movieDiv.appendChild(p);
+    /*movieDiv.appendChild(p);*/
 
     container.appendChild(movieDiv);
   }
@@ -110,3 +110,5 @@ window.onload = function () {
   displayFourCards();
 };
 // Muestra las primeras 4 cards al cargar la página y se ve el resto corriendo la barra
+
+//--------------------------------

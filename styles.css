@@ -13,10 +13,9 @@ body {
   margin-top: 60px;
 }
 
-/*  INDEX HEADER  */
-
+/*  INDEX HEADER #c71585 */
 header {
-  background-color: #c71585;
+  background-color: rgb(104, 42, 102);
   position: fixed;
   top: 0;
   width: 100%;
@@ -186,7 +185,8 @@ p {
 
 .buscador h3,
 .tendencias h3,
-.aclamadas h3 {
+.aclamadas h3,
+.irAapi h3 {
   color: azure;
   font-size: 40px;
   text-align: center;
@@ -310,13 +310,15 @@ hr {
 
 .aclamadas {
   background-color: mediumpurple;
-  padding: 5em;
+  padding: 2em;
 }
 
 #cardAclam-container {
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
   width: 100%;
+  max-height: 400px;
 }
 
 .movie {
@@ -332,10 +334,62 @@ hr {
   border-radius: 10px;
 }
 
+/* Cambia el color de la barra de desplazamiento */
+/*#card-container::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento
+}
+
+/*#card-container::-webkit-scrollbar-thumb {
+  background-color: #ff5733; /* Color del pulgar (arrastrable) 
+}
+
+/* #card-container::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color del fondo de la barra 
+} */
+
+/*   5ta SECCION  -  IR A LA API  */
+
+.irAapi {
+  background-color: mediumpurple;
+  height: 400px;
+  padding: 2em;
+}
+
+#api-container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  max-height: 400px;
+  padding-bottom: 4.8em;
+}
+
+.result {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 270px;
+  margin: 25px;
+}
+
+.result img {
+  width: 80%;
+  height: 80%;
+}
+
+.result h4 {
+  color: azure;
+  font-size: large;
+}
+
+.result p {
+  color: #c71585;
+  font-size: small;
+}
+
 /* INDEX FOOTER */
 
 footer {
-  background-color: #c71585;
+  background-color: rgb(104, 42, 102);
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -460,7 +514,7 @@ footer {
   background-color: #cbcac9;
 }
 
-/*  animación del form registro  */
+/*  animación del form registro  
 
 .secRegistro {
   opacity: 0;
@@ -475,7 +529,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 .TyC {
   font-size: small;
