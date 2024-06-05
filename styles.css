@@ -514,7 +514,7 @@ footer {
   background-color: #cbcac9;
 }
 
-/*  animación del form registro  
+/*  animación del form registro   */
 
 .secRegistro {
   opacity: 0;
@@ -529,7 +529,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-} */
+}
 
 .TyC {
   font-size: small;
