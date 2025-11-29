@@ -8,7 +8,7 @@ El proyecto se desarrolló con HTML + CSS. Incorpora animaciones, hover y anclaj
 Tiene un mínimo de JS para la interacción con una API que devuelve
 una foto random con nombre y mail.
 
-📌 Descripción breve
+📌 ##Descripción breve
 
 🛠️ Stack utilizado (HTML, CSS, JS, API REST)
 
