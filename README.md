@@ -3,12 +3,12 @@
 Primer proyecto personal para el curso de FullStack con PHP de CaC 2024, comisión 24144. 
 Se trata del front de una página de películas. 
 Posee botones funcionales en su navegador que llevan a secciones de la misma página o a 
-páginas aparte como #Inicio y #Registro. 
+páginas aparte como *Inicio* y *Registro*. 
 El proyecto se desarrolló con HTML + CSS. Incorpora animaciones, hover y anclaje a secciones. 
 Tiene un mínimo de JS para la interacción con una API que devuelve
 una foto random con nombre y mail.
 
-📌 *Descripción breve
+📌 *DESCRIPCIÓN BREVE*
 
 🛠️ Stack utilizado (HTML, CSS, JS, API REST)
 
